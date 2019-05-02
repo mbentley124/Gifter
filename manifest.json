@@ -1,0 +1,19 @@
+{
+	"manifest_version": 2,
+	"name": "Gifter",
+	"version": "0.0.2",
+	"description": "An extension to buy and sell gift cards. ",
+	"content_scripts": [
+		{
+			"matches": [
+				"https://pay.ebay.com/*", "http://pay.ebay.com/*"
+			],
+			"js": [
+				"content.js"
+			]
+		}
+	],
+	"web_accessible_resources": [
+		"popup.html"
+	]
+}
